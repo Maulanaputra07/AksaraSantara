@@ -249,10 +249,10 @@ width: 100%;
 
 .section1 > img{
   object-fit: cover;
-  /* width: 40em; */
-  /* height: 320px; */
   width: 100%;
   height: 100%;
+  /* height: 320px; */
+  /* width: 40em; */
     /* transition: all 800ms ease; */
     /* height: 100%; */
     /* border: 2px white solid; */
@@ -268,6 +268,7 @@ width: 100%;
 } */
 
 .section1{
+    transition: all 800ms ease;
   display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -463,10 +464,11 @@ width: 100%;
 }
 .title-text-daerah {
   /* text-align: center;
-  position: relative; */
+  */
+  /* font-family: 'Roboto Slab', serif; */
+  position: relative;
   top: 0;
   z-index: 1;
-  /* font-family: 'Roboto Slab', serif; */
   font-size: 4em;
   padding: 0.3em 0;
   transition: all 400ms ease-out;
@@ -484,6 +486,12 @@ width: 100%;
   height: 20vh;
   background-color: black;
 } */
+
+.button{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
 
 button{
   background: transparent;
@@ -649,7 +657,7 @@ footer.footer {
   }
 
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 767px) {
 
 
   .main{
@@ -711,6 +719,10 @@ footer.footer {
     height: 5px;
   }
 
+  .button{
+    top: 37%;
+  }
+
   .section1{
     transition: all 1s ease;
     /* transition: all 1s ease; */
@@ -718,12 +730,13 @@ footer.footer {
 
   .section1 > img{
     /* width: 35%; */
+    /* height: 26vh; */
     transition: all 1s ease;
   }
 
   .section5 > .title{
     height: 829px;
-    font-size: 60px;
+    font-size: 40px;
   }
 
   .section5{
@@ -731,13 +744,13 @@ footer.footer {
   }
 
   .parent-text-daerah{
-    height: 5em;
+    height: auto;
     /* align-items: flex-st; */
   }
 
   .parent-text-daerah > .text-daerah {
     max-width: 70%;
-    height: 175px;
+    height: auto;
   }
 
   .detailDaerah{
@@ -767,6 +780,7 @@ footer.footer {
 
   .titleTarian{
     position: relative;
+    font-size: 30px;
     left: -15px;
     top: 10px;
   }
@@ -783,6 +797,10 @@ footer.footer {
     margin-right: 10%;
   }
 
+  .transition1{
+    bottom: -41px;
+  }
+
   /* .imgMakanan{
     width: 70%;
   } */
@@ -797,12 +815,17 @@ footer.footer {
     position: relative;
     left: -35px;
     top: 10px;
-    font-size: 60px;
+    font-size: 30px;
   }
+
+  /* .title{
+    font-size: 30px;
+  } */
 
   #desc{
     /* display: none; */
-    width: 300px;
+    width: auto;
+    margin: 5%;
     font-size: 15px;
   } 
 
